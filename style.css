@@ -26,11 +26,6 @@
     height: auto;
 }
 
-.footer {
-    grid-area: footer;
-    background-color: yellow;
-}
-
 .menu {
     list-style-type: none;
     height: 100%;
@@ -64,6 +59,5 @@ nav {
     grid-template-areas: 
         "aside main main"
         "aside main main"
-        "footer footer footer";
     margin-top: 10px;
 }
