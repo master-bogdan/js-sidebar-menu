@@ -11,6 +11,15 @@
 .main {
     grid-area: main;
 }
+.main_item {
+    padding: 1%;
+}
+.main_item-title {
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    padding: 1%;
+}
 
 .main_item img {
     max-width: 100%;
@@ -24,15 +33,23 @@
 
 .menu {
     list-style-type: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 
+nav {
+    height: 100%;
 }
 
 .menu_list-item {
+    display: block;
     font-size: 14px;
     cursor: pointer;
     padding: 5%;
     border: 1px solid wheat;
     color: white;
+    font-weight: 700;
     text-transform: uppercase;
     background: linear-gradient(to bottom, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
@@ -42,9 +59,11 @@
 
 .container {
     display: grid;
+    justify-content: stretch;
     grid-template-columns: 30%;
     grid-template-areas: 
         "aside main main"
         "aside main main"
         "footer footer footer";
+    margin-top: 10px;
 }
