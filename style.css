@@ -58,6 +58,6 @@ nav {
     grid-template-columns: 30%;
     grid-template-areas: 
         "aside main main"
-        "aside main main"
+        "aside main main";
     margin-top: 10px;
 }
