@@ -1,63 +1,43 @@
 window.addEventListener('DOMContentLoaded', () => {
-    const item1 = {
-        heading: 'Try scubadiving',
-        image: 'https://bit.ly/3dIlsn0',
-        description: `For those who want to test the waters and try scuba, this is the course for you! The SDI Scuba Discovery Program gives you a glimpse of what you can expect to experience in the underwater world as well as what you could expect to learn in the SDI Open Water Scuba Diver course. During this experience program, you will go through the basic safety procedures for enjoyable scuba diving under the watchful eye of an active SDI Instructor.
-        You will learn skills such as equalizing your ears, buddy checks, basic buoyancy control, underwater communication, and more. You will also be given an introduction to basic scuba equipment followed by an underwater tour in the local pool or aquatic environment.`
-    };
-
-    const item2 = {
-        heading: 'Become Open Water Scuba Diver',
-        image: 'https://bit.ly/3dDAQRH',
-        description: `For those who want to test the waters and try scuba, this is the course for you! The SDI Scuba Discovery Program gives you a glimpse of what you can expect to experience in the underwater world as well as what you could expect to learn in the SDI Open Water Scuba Diver course. During this experience program, you will go through the basic safety procedures for enjoyable scuba diving under the watchful eye of an active SDI Instructor.
-        You will learn skills such as equalizing your ears, buddy checks, basic buoyancy control, underwater communication, and more. You will also be given an introduction to basic scuba equipment followed by an underwater tour in the local pool or aquatic environment.`
-    };
-
-    const item3 = {
-        heading: 'Advanced Open Water Diver',
-        image: 'https://bit.ly/2YGlUy2',
-        description: `For those who want to test the waters and try scuba, this is the course for you! The SDI Scuba Discovery Program gives you a glimpse of what you can expect to experience in the underwater world as well as what you could expect to learn in the SDI Open Water Scuba Diver course. During this experience program, you will go through the basic safety procedures for enjoyable scuba diving under the watchful eye of an active SDI Instructor.
-        You will learn skills such as equalizing your ears, buddy checks, basic buoyancy control, underwater communication, and more. You will also be given an introduction to basic scuba equipment followed by an underwater tour in the local pool or aquatic environment.`
-    };
-
-    const item4 = {
-        heading: 'Rescue Diver',
-        image: 'https://bit.ly/3i8YAR6',
-        description: `For those who want to test the waters and try scuba, this is the course for you! The SDI Scuba Discovery Program gives you a glimpse of what you can expect to experience in the underwater world as well as what you could expect to learn in the SDI Open Water Scuba Diver course. During this experience program, you will go through the basic safety procedures for enjoyable scuba diving under the watchful eye of an active SDI Instructor.
-        You will learn skills such as equalizing your ears, buddy checks, basic buoyancy control, underwater communication, and more. You will also be given an introduction to basic scuba equipment followed by an underwater tour in the local pool or aquatic environment.`
-    };
-
-    const item5 = {
-        heading: 'Divemaster',
-        image: 'https://bit.ly/2BMkOaG',
-        description: `For those who want to test the waters and try scuba, this is the course for you! The SDI Scuba Discovery Program gives you a glimpse of what you can expect to experience in the underwater world as well as what you could expect to learn in the SDI Open Water Scuba Diver course. During this experience program, you will go through the basic safety procedures for enjoyable scuba diving under the watchful eye of an active SDI Instructor.
-        You will learn skills such as equalizing your ears, buddy checks, basic buoyancy control, underwater communication, and more. You will also be given an introduction to basic scuba equipment followed by an underwater tour in the local pool or aquatic environment.`
-    };
-
-    const item6 = {
-        heading: 'Scubadiving Intructor',
-        image: 'https://bit.ly/2ZdFL6x',
-        description: `For those who want to test the waters and try scuba, this is the course for you! The SDI Scuba Discovery Program gives you a glimpse of what you can expect to experience in the underwater world as well as what you could expect to learn in the SDI Open Water Scuba Diver course. During this experience program, you will go through the basic safety procedures for enjoyable scuba diving under the watchful eye of an active SDI Instructor.
-        You will learn skills such as equalizing your ears, buddy checks, basic buoyancy control, underwater communication, and more. You will also be given an introduction to basic scuba equipment followed by an underwater tour in the local pool or aquatic environment.`
-    };
-
+    const images = ['https://bit.ly/3dIlsn0', 'https://bit.ly/3dDAQRH', 'https://bit.ly/2YGlUy2', 'https://bit.ly/3i8YAR6', 'https://bit.ly/2BMkOaG', 'https://bit.ly/2ZdFL6x'];
+    const headings = ['Try scubadiving', 'Become Open Water Scuba Diver', 'Advanced Open Water Diver', 'Rescue Diver', 'Divemaster', 'Scubadiving Intructor'];
 
     const contentTitle = document.querySelector('.main_item-title');
     const contentImg = document.querySelector('.main_item img');
-    const contentText = document.querySelector('.main_item-descr');
-    const menu = document.querySelectorAll('.menu');
+    const menu = document.querySelectorAll('.menu li');
+    
 
-    menu.forEach((item, index) => {
+    menu.forEach(item => {
         item.addEventListener('click', (e) => {
             e.preventDefault();
-            contentTitle.innerHTML = this.headings[index];
-            contentImg.src = this.images[index];
+            switch(item) {
+                case menu[0]:
+                    contentTitle.textContent = headings[0];
+                    contentImg.src = images[0];
+                    break;
+                case menu[1]:
+                    contentTitle.textContent = headings[1];
+                    contentImg.src = images[1];
+                    break;
+                case menu[2]:
+                    contentTitle.textContent = headings[2];
+                    contentImg.src = images[2];
+                    break;
+                case menu[3]:
+                    contentTitle.textContent = headings[3];
+                    contentImg.src = images[3];
+                    break;
+                case menu[4]:
+                    contentTitle.textContent = headings[4];
+                    contentImg.src = images[4];
+                    break;
+                case menu[5]:
+                    contentTitle.textContent = headings[5];
+                    contentImg.src = images[5];
+                    break;
+            }
         });
+       
     });
-
-
-
-
-
 
 });

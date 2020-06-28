@@ -33,6 +33,7 @@
     padding: 5%;
     border: 1px solid wheat;
     color: white;
+    text-transform: uppercase;
     background: linear-gradient(to bottom, #0083B0, #00B4DB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .menu_list-item:hover {
