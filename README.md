@@ -1,2 +1,10 @@
-JS Sidebar menu
+:open_file_folder: JS Native Sidebar Menu
 ===============
+
+### Technologies used
+- HTML5
+- CSS Grid
+- JS
+- ES6
+
+* All output render from JS
