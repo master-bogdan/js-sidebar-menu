@@ -7,5 +7,5 @@
 - JS
 - ES6
 
-* All output render from JS
+* All output render from JS  
 [DEMO](https://master-bogdan.github.io/js-sidebar-menu/)
